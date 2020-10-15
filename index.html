@@ -2,9 +2,96 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Semantic Elements</title>
+    <title>HTML110 Lesson 01 Assignment</title>
+
+    <!-- creating a stylesheet in html -->
+    <style>
+      p
+      {
+        color: red;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+      nav
+      {
+        background-color: lightblue;
+        border: 1px dashed black;
+      }
+    </style>
   </head>
   <body>
-    
+    <h1>HTML110 Lesson 01 Assignment</h1>
+
+    <!-- navigation panel -->
+    <nav class="menu">
+      <u><b>Page Navigation</b></u>
+      <ul>
+        <!-- <a> creates a hyperlink, in this case, it goes to specific sections of the page -->
+        <li><a href="#assignment">Assignment Details</a></li>
+        <li><a href="#definition">Definition of Semantic Elements</a></li>
+      </ul>
+    </nav>
+
+    <br>
+
+    <!-- progress bar -->
+    Progress:
+    <progress value="100" max="100"></progress><br>
+    Assignment complete!
+
+    <section><h2 id="assignment"><u>The Assignment</u></h2>
+      <ol><!-- ordered / numbered list -->
+        <li> Read the following articles:</li>
+        <ul><!-- unordered / bullet point list -->
+          <!-- <a> creates a hyperlink, in this case it leads to the articles' webpage -->
+          <li><a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">An Overview of HTML5 semantics</a></li>
+          <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Semantic Elements</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">List of possible HTML Elements</a></li>
+        </ul>
+        <li> Write one paragraph summarizing what semantic elements are (max of 150 words)</li>
+        <li> Create a new git repository on your computer. Name it semantic-elements.</li>
+        <li> Inside the repo, code an HTML document. Name it index.html.</li>
+        <li> Use at least 15 different types of HTML elements (correctly!)
+          We didn't cover 15 elements in the lesson. You'll need to use some information from the articles.</li>
+        <li> View your document in a browser to ensure it displays as you expect.</li>
+        <li> Push your code to GitHub as a new repository.</li>
+      </ol>
+    <h3><u>Submitting</u></h3>
+    <ol>
+      <li> Click the blue <i>Submit Assignment</i> button.</li>
+      <li> Copy link to your GitHub repository in the URL field.</li>
+      <li> Click the <i>Submit Assignment</i> button again to turn in your assignment.</li>
+    </ol>
+    </section>
+
+    <hr>
+
+    <!-- <mark> is a highlight -->
+    <section><h2 id="definition"><u>What are semantic elements?</u></h2>
+    <mark><i>Semantic elements</i></mark> clearly define its content to both the developer
+      and the browser. Some examples are found throughout this page and shown below, but
+      some common ones are [header] and [footer]. Previously, [div] or [span] were used to define elements.
+      They are examples of <mark><i>non-semantic</i></mark> elements -
+      they tell us nothing about their content.
+
+    <!-- figure and caption -->
+    <figure>
+      <img src="html5demo1.jpg" alt="semantic_elements_HTML">
+      <figcaption> Semantic Elements For Document Outlining from
+      <a href="https://codepen.io/mi-lee/post/an-overview-of-html5-semantics">An Overview of HTML5 semantics</a></figcaption>
+    </figure>
+    </section>
+
+    <p>
+      <!-- <time> is used to present dates and times in a machine readable format -->
+      <b>Next class is <time datetime="2020-10-15T18:00:00">Thurs., Oct. 15, 2020</time>.
+      See you soon!</b>
+    </p>
+
+    <hr><!-- creates a thematic break (horizontal rule) element in html -->
+
+    <footer>Created by: Kendall Eng<br>
+    Contact: <a href="mailto:keng2@uw.edu">keng2@uw.edu</a><!-- link to UW email -->
+    </footer>
   </body>
 </html>
